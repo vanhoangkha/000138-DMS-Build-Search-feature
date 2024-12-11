@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Create Lambda Functions :: SERVERLESS - INTEGRATE AWS OPENSEARCH  WITH A DYNAMODB STREAM</title>
 
     
-    <link href="/css/nucleus.css?1701093800" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1701093800" rel="stylesheet">
-    <link href="/css/hybrid.css?1701093800" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1701093800" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1701093800" rel="stylesheet">
-    <link href="/css/auto-complete.css?1701093800" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1701093800" rel="stylesheet">
-    <link href="/css/theme.css?1701093800" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1701093800" rel="stylesheet">
+    <link href="/css/nucleus.css?1733902257" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733902257" rel="stylesheet">
+    <link href="/css/hybrid.css?1733902257" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733902257" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733902257" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733902257" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733902257" rel="stylesheet">
+    <link href="/css/theme.css?1733902257" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733902257" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1701093800" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733902257" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1701093800"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733902257"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1701093800"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1701093800"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733902257"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733902257"></script>
 <script type="text/javascript">
     
-        var baseurl = "";
+        var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1701093800"></script>
+<script type="text/javascript" src="/js/search.js?1733902257"></script>
 
     
   </div>
@@ -140,7 +140,7 @@
   
     
     <li data-nav-id="/2-create-api-and-lambda-functions/2-1-create-lambda-functions/" title="Create Lambda Functions" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -363,7 +363,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>27-11-2023</font></i>
+        <i><font color=orange>11-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -502,7 +502,7 @@
 <p>Click <strong>Create function</strong></p>
 </li>
 </ol>
-<p><img src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-1.png?featherlight=false&amp;width=90pc" alt="CreateSQS"></p>
+<p><img alt="CreateSQS" src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-1.png?featherlight=false&width=90pc"></p>
 <ol start="3">
 <li>Enter function name: <code>search_docs</code></li>
 </ol>
@@ -510,23 +510,23 @@
 <li>Selecting <strong>Runtime</strong> is <strong>Python 3.9</strong></li>
 <li>Click <strong>Create function</strong></li>
 </ul>
-<p><img src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-2.png?featherlight=false&amp;width=90pc" alt="CreateSQS"></p>
+<p><img alt="CreateSQS" src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-2.png?featherlight=false&width=90pc"></p>
 <ol start="4">
 <li>Click <strong>Upload from</strong>, then select <strong>.zip file</strong></li>
 </ol>
-<p><img src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-3.png?featherlight=false&amp;width=90pc" alt="CreateSQS"></p>
+<p><img alt="CreateSQS" src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-3.png?featherlight=false&width=90pc"></p>
 <ol start="5">
 <li>Click <strong>Upload</strong> and choose <strong>search_docs.zip</strong> file you just downloaded. Next click <strong>Save</strong>.</li>
 </ol>
-<p><img src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-4.png?featherlight=false&amp;width=90pc" alt="CreateSQS"></p>
+<p><img alt="CreateSQS" src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-4.png?featherlight=false&width=90pc"></p>
 <ol start="6">
 <li>Scroll down to bottom, in <strong>Runtime settings</strong> section, click <strong>Edit</strong></li>
 </ol>
-<p><img src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-5.png?featherlight=false&amp;width=90pc" alt="CreateSQS"></p>
+<p><img alt="CreateSQS" src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-5.png?featherlight=false&width=90pc"></p>
 <ol start="7">
 <li>Repalce <strong>lambda_function</strong> with <code>search_docs</code>, then click <strong>Save</strong></li>
 </ol>
-<p><img src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-6.png?featherlight=false&amp;width=90pc" alt="CreateSQS"></p>
+<p><img alt="CreateSQS" src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-6.png?featherlight=false&width=90pc"></p>
 <ol start="8">
 <li>Next, we will update the permissions for Lambda to be able to access the OpenSearch domain.</li>
 </ol>
@@ -534,11 +534,11 @@
 <li>Select <strong>Configuration</strong> tab and select <strong>Permission</strong> on the left menu.</li>
 <li>Select the execution role of this function</li>
 </ul>
-<p><img src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-7.png?featherlight=false&amp;width=90pc" alt="CreateSQS"></p>
+<p><img alt="CreateSQS" src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-7.png?featherlight=false&width=90pc"></p>
 <ol start="9">
 <li>Expand policy and click <strong>Edit</strong></li>
 </ol>
-<p><img src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-8.png?featherlight=false&amp;width=90pc" alt="CreateSQS"></p>
+<p><img alt="CreateSQS" src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-8.png?featherlight=false&width=90pc"></p>
 <ol start="10">
 <li>Copy the below script and paste to <strong>JSON</strong> tab. Then click <strong>Review policy</strong></li>
 </ol>
@@ -548,16 +548,16 @@
 </span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;Action&#34;</span>: <span style="color:#e6db74">&#34;es:*&#34;</span>,
 </span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;Resource&#34;</span>: <span style="color:#e6db74">&#34;*&#34;</span>
 </span></span><span style="display:flex;"><span>        }
-</span></span></code></pre></div><p><img src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-9.png?featherlight=false&amp;width=90pc" alt="CreateSQS"></p>
+</span></span></code></pre></div><p><img alt="CreateSQS" src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-9.png?featherlight=false&width=90pc"></p>
 <ol start="11">
 <li>Click <strong>Save changes</strong></li>
 </ol>
-<p><img src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-10.png?featherlight=false&amp;width=90pc" alt="CreateSQS"></p>
+<p><img alt="CreateSQS" src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-10.png?featherlight=false&width=90pc"></p>
 <ol start="12">
 <li>Similarly, we will create a function to load streaming data from the DynamoDB into the OpenSearch instance.</li>
 <li>Back to AWS Lambda console, click <strong>Create function</strong></li>
 </ol>
-<p><img src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-11.png?featherlight=false&amp;width=90pc" alt="CreateSQS"></p>
+<p><img alt="CreateSQS" src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-11.png?featherlight=false&width=90pc"></p>
 <ol start="14">
 <li>Enter the function name: <code>load_stream</code></li>
 </ol>
@@ -565,23 +565,23 @@
 <li>Selecting <strong>Runtime</strong> is <strong>Python 3.9</strong></li>
 <li>Click <strong>Create function</strong></li>
 </ul>
-<p><img src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-12.png?featherlight=false&amp;width=90pc" alt="CreateSQS"></p>
+<p><img alt="CreateSQS" src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-12.png?featherlight=false&width=90pc"></p>
 <ol start="15">
 <li>Click <strong>Upload from</strong>, then select <strong>.zip file</strong></li>
 </ol>
-<p><img src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-13.png?featherlight=false&amp;width=90pc" alt="CreateSQS"></p>
+<p><img alt="CreateSQS" src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-13.png?featherlight=false&width=90pc"></p>
 <ol start="16">
 <li>Click <strong>Upload</strong> and choose <strong>search_docs.zip</strong> file you just downloaded. Next click <strong>Save</strong>.</li>
 </ol>
-<p><img src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-14.png?featherlight=false&amp;width=90pc" alt="CreateSQS"></p>
+<p><img alt="CreateSQS" src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-14.png?featherlight=false&width=90pc"></p>
 <ol start="17">
 <li>Scroll down to bottom, in <strong>Runtime settings</strong> section, click <strong>Edit</strong></li>
 </ol>
-<p><img src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-15.png?featherlight=false&amp;width=90pc" alt="CreateSQS"></p>
+<p><img alt="CreateSQS" src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-15.png?featherlight=false&width=90pc"></p>
 <ol start="18">
 <li>Repalce <strong>lambda_function</strong> with <code>load_stream_data</code>, then click <strong>Save</strong></li>
 </ol>
-<p><img src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-16.png?featherlight=false&amp;width=90pc" alt="CreateSQS"></p>
+<p><img alt="CreateSQS" src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-16.png?featherlight=false&width=90pc"></p>
 <ol start="19">
 <li>Next, we will update the permissions for Lambda to be able to access the OpenSearch domain and DynamoDB.</li>
 </ol>
@@ -589,29 +589,29 @@
 <li>Select <strong>Configuration</strong> tab and select <strong>Permission</strong> on the left menu.</li>
 <li>Select the execution role of this function</li>
 </ul>
-<p><img src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-17.png?featherlight=false&amp;width=90pc" alt="CreateSQS"></p>
+<p><img alt="CreateSQS" src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-17.png?featherlight=false&width=90pc"></p>
 <ol start="20">
 <li>Click <strong>Add permissions</strong> and select <strong>Attach policies</strong></li>
 </ol>
-<p><img src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-18.png?featherlight=false&amp;width=90pc" alt="CreateSQS"></p>
+<p><img alt="CreateSQS" src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-18.png?featherlight=false&width=90pc"></p>
 <ol start="21">
 <li>Enter <code>AmazonOpenSearchServiceFullAccess</code> and select that policy</li>
 </ol>
-<p><img src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-19.png?featherlight=false&amp;width=90pc" alt="CreateSQS"></p>
+<p><img alt="CreateSQS" src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-19.png?featherlight=false&width=90pc"></p>
 <ol start="22">
 <li>Enter <code>AWSLambdaDynamoDBExecutionRole</code> and select that policy. Then click <strong>Add permissions</strong></li>
 </ol>
-<p><img src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-20.png?featherlight=false&amp;width=90pc" alt="CreateSQS"></p>
+<p><img alt="CreateSQS" src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-20.png?featherlight=false&width=90pc"></p>
 <ol start="23">
 <li>Open <a href="https://ap-southeast-1.console.aws.amazon.com/dynamodbv2/home?region=ap-southeast-1#service">Amazon DynamoDB console</a></li>
 <li>Select <strong>Tables | Update settings</strong> on the left menu, then select <strong>Documents</strong> table</li>
 <li>Click <strong>Exports and streams</strong> tab</li>
 </ol>
-<p><img src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-21.png?featherlight=false&amp;width=90pc" alt="CreateStream"></p>
+<p><img alt="CreateStream" src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-21.png?featherlight=false&width=90pc"></p>
 <ol start="26">
 <li>Scroll down to bottom, in <strong>DynamoDB stream details</strong> section, click <strong>Create trigger</strong></li>
 </ol>
-<p><img src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-22.png?featherlight=false&amp;width=90pc" alt="CreateStream"></p>
+<p><img alt="CreateStream" src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-22.png?featherlight=false&width=90pc"></p>
 <ol start="23">
 <li>Enter the lambda function: <code>load_stream</code>
 <ul>
@@ -620,7 +620,7 @@
 </ul>
 </li>
 </ol>
-<p><img src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-23.png?featherlight=false&amp;width=90pc" alt="CreateStream"></p>
+<p><img alt="CreateStream" src="/images/2-create-api-and-lambda-functions/2-1-create-lambda-function-23.png?featherlight=false&width=90pc"></p>
 
 
 
@@ -800,19 +800,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1701093800"></script>
-    <script src="/js/perfect-scrollbar.min.js?1701093800"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1701093800"></script>
-    <script src="/js/jquery.sticky.js?1701093800"></script>
-    <script src="/js/featherlight.min.js?1701093800"></script>
-    <script src="/js/highlight.pack.js?1701093800"></script>
+    <script src="/js/clipboard.min.js?1733902257"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733902257"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733902257"></script>
+    <script src="/js/jquery.sticky.js?1733902257"></script>
+    <script src="/js/featherlight.min.js?1733902257"></script>
+    <script src="/js/highlight.pack.js?1733902257"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1701093800"></script>
-    <script src="/js/learn.js?1701093800"></script>
-    <script src="/js/hugo-learn.js?1701093800"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733902257"></script>
+    <script src="/js/learn.js?1733902257"></script>
+    <script src="/js/hugo-learn.js?1733902257"></script>
 
-    <link href="/mermaid/mermaid.css?1701093800" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1701093800"></script>
+    <link href="/mermaid/mermaid.css?1733902257" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733902257"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
